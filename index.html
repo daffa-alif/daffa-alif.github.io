@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,7 +205,7 @@
           </a>
         </div>
         <div class="mt-8 flex gap-4">
-          <a href="https://linkedin.com/" target="_blank" class="text-gray-600 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-400 text-2xl">
+          <a href="https:/linkedin.com/daffa-alif" target="_blank" class="text-gray-600 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-400 text-2xl">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://github.com/daffa-alif" target="_blank" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-2xl">
@@ -218,12 +219,54 @@
           </a>
         </div>
       </div>
-      <div class="order-1 md:order-2 flex justify-center">
-        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl transform hover:scale-105 transition duration-300">
-          <img src="/api/placeholder/400/400" alt="Daffa Aliefiandy Yudhistira" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/30 to-purple-600/30"></div>
+      <div class="order-1 md:order-2 hidden md:flex justify-center">
+        <div class="w-full max-w-md rounded-lg overflow-hidden shadow-lg bg-gray-800">
+          <!-- Terminal header with dots -->
+          <div class="px-4 py-2 bg-gray-700 flex items-center">
+            <div class="h-3 w-3 rounded-full bg-red-500 mr-2"></div>
+            <div class="h-3 w-3 rounded-full bg-yellow-500 mr-2"></div>
+            <div class="h-3 w-3 rounded-full bg-green-500"></div>
+          </div>
+          <!-- Terminal content -->
+          <div class="p-4 text-gray-200 font-mono">
+            <span id="terminal-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
         </div>
       </div>
+      
+      <style>
+        .typing-cursor {
+          display: inline-block;
+          width: 3px;
+          background-color: #fff;
+          animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      </style>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const text = "Let's Team Up for an Amazing Journey! ☀️ Ready to Collaborate?";
+          const terminalText = document.getElementById('terminal-text');
+          let index = 0;
+          const typingSpeed = 50; // milliseconds per character
+          
+          function typeText() {
+            if (index < text.length) {
+              terminalText.textContent += text.charAt(index);
+              index++;
+              setTimeout(typeText, typingSpeed);
+            }
+          }
+          
+          typeText();
+        });
+      </script>
     </div>
     <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-blue-400 rounded-full filter blur-3xl opacity-20"></div>
     <div class="absolute -top-16 -right-16 w-64 h-64 bg-purple-400 rounded-full filter blur-3xl opacity-20"></div>
@@ -244,7 +287,7 @@
           I'm also interested in building businesses and partnerships. I believe in the power of collaboration and am always open to new opportunities to work with like-minded individuals and organizations.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="https://linkedin.com/" target="_blank" class="flex items-center gap-2 bg-blue-100 dark:bg-gray-600 px-4 py-2 rounded-lg hover:bg-blue-200 dark:hover:bg-gray-500 transition">
+          <a href="https:/linkedin.com/daffa-alif" target="_blank" class="flex items-center gap-2 bg-blue-100 dark:bg-gray-600 px-4 py-2 rounded-lg hover:bg-blue-200 dark:hover:bg-gray-500 transition">
             <i class="fab fa-linkedin text-blue-700 dark:text-blue-400"></i>
             <span>LinkedIn</span>
           </a>
@@ -512,7 +555,7 @@
         </a>
         
         <div class="grid grid-cols-2 gap-4">
-          <a href="https://linkedin.com/" target="_blank" class="flex flex-col items-center bg-gray-100 dark:bg-gray-600 p-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-500 transition">
+          <a href="https:/linkedin.com/daffa-alif" target="_blank" class="flex flex-col items-center bg-gray-100 dark:bg-gray-600 p-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-500 transition">
             <i class="fab fa-linkedin text-3xl text-blue-600 dark:text-blue-400 mb-2"></i>
             <span>LinkedIn</span>
           </a>
@@ -549,7 +592,7 @@
         <a href="https://tiktok.com/" target="_blank" class="text-gray-400 hover:text-white">
           <i class="fab fa-tiktok"></i>
         </a>
-        <a href="https://linkedin.com/" target="_blank" class="text-gray-400 hover:text-white">
+        <a href="https:/linkedin.com/daffa-alif" target="_blank" class="text-gray-400 hover:text-white">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
@@ -741,3 +784,4 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 </body>
 </html>
+
