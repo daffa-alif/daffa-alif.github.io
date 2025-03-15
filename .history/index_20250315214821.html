@@ -220,53 +220,16 @@
         </div>
       </div>
       <div class="order-1 md:order-2 flex justify-center">
-        <div class="w-full max-w-md rounded-lg overflow-hidden shadow-lg bg-gray-800">
-          <!-- Terminal header with dots -->
-          <div class="px-4 py-2 bg-gray-700 flex items-center">
-            <div class="h-3 w-3 rounded-full bg-red-500 mr-2"></div>
-            <div class="h-3 w-3 rounded-full bg-yellow-500 mr-2"></div>
-            <div class="h-3 w-3 rounded-full bg-green-500"></div>
+        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl transform hover:scale-105 transition duration-300">
+          <div class="w-full h-full flex items-center justify-center bg-gray-100">
+            <div class="text-center p-4 font-medium">
+              <p>hello world</p>
+              <p>hey you there, let's collaborate and make a project together🌟🌟🌟</p>
+            </div>
           </div>
-          <!-- Terminal content -->
-          <div class="p-4 text-gray-200 font-mono">
-            <span id="terminal-text"></span>
-            <span class="typing-cursor">|</span>
-          </div>
+          <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/30 to-purple-600/30"></div>
         </div>
       </div>
-      
-      <style>
-        .typing-cursor {
-          display: inline-block;
-          width: 3px;
-          background-color: #fff;
-          animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0; }
-        }
-      </style>
-      
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const text = "Let's Team Up for an Amazing Journey! ☀️ Ready to Collaborate?";
-          const terminalText = document.getElementById('terminal-text');
-          let index = 0;
-          const typingSpeed = 50; // milliseconds per character
-          
-          function typeText() {
-            if (index < text.length) {
-              terminalText.textContent += text.charAt(index);
-              index++;
-              setTimeout(typeText, typingSpeed);
-            }
-          }
-          
-          typeText();
-        });
-      </script>
     </div>
     <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-blue-400 rounded-full filter blur-3xl opacity-20"></div>
     <div class="absolute -top-16 -right-16 w-64 h-64 bg-purple-400 rounded-full filter blur-3xl opacity-20"></div>
