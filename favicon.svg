@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="#1a73e8"/>
+  
+  <!-- Letter D -->
+  <path d="M30,25 h20 c14,0 25,10 25,25 s-11,25 -25,25 h-20 z" fill="white"/>
+  <path d="M40,35 v30 h10 c8,0 15,-6 15,-15 s-7,-15 -15,-15 z" fill="#1a73e8"/>
+</svg>
